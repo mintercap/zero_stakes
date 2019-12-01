@@ -121,7 +121,7 @@ class Helper
 		$h = $height;
 		while( !self::IsRewardHeight($h) )
 		{
-			$h--;
+			$h++;
 		}
 		return ($h);
 	}
