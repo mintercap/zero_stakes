@@ -23,7 +23,7 @@ class Config
 		],
 		[
 			"pubkey" => "Mp120c15e48aed0ac866a1a918bd367cfa31909a6b09f328a18bd18f32edef2be8",
-			"height" => 3391810, // 1 Dec 2019
+			"height" => 3391815, // 1 Dec 2019
 			"filename" => "result/minterpro2.txt"
 		]	
 	];

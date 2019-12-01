@@ -4,7 +4,7 @@
 
 
 1 Dec 2019 (MinterPro 2.0)
-https://explorer.minter.network/blocks/3391810
+https://explorer.minter.network/blocks/3391815
 
 1 Nov 2019 (CAT)
 https://explorer.minter.network/blocks/2882847
