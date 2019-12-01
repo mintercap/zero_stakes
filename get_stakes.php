@@ -6,7 +6,7 @@ $merged = [];
 
 foreach (Config::$Snapshots as $ss)
 {
-	$reward_height = Helper::GetLastRewardHeight($ss["height"]);
+	$reward_height = Helper::GetNextRewardHeight($ss["height"]);
 	$f = 'data/' . $reward_height . ".json";
 	if ( !file_exists($f) )
 	{
@@ -116,7 +116,7 @@ function StakesToString($stakes)
 
 class Helper
 {
-	public static function GetLastRewardHeight($height)
+	public static function GetNextRewardHeight($height)
 	{
 		$h = $height;
 		while( !self::IsRewardHeight($h) )
