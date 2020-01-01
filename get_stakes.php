@@ -21,7 +21,8 @@ foreach (Config::$Snapshots as $ss)
 	$data_str = StakesToString($stakes);
 	file_put_contents($ss["filename"], $data_str);
 	
-	MergeStakes($merged, $stakes);
+	if ($ss["merge"])
+		MergeStakes($merged, $stakes);
 }
 // exclude wallets with less than minimal defined stake
 $filtered = FilterByMinStake($merged);
