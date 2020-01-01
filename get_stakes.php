@@ -14,6 +14,8 @@ foreach (Config::$Snapshots as $ss)
 		exit(1);
 	}
 	$stakes = GetStakes($f, $ss["pubkey"]);
+	// sort stakes by value
+	arsort($stakes);
 	
 	// save each node wallets
 	$data_str = StakesToString($stakes);
@@ -23,6 +25,7 @@ foreach (Config::$Snapshots as $ss)
 }
 // exclude wallets with less than minimal defined stake
 $filtered = FilterByMinStake($merged);
+// sort stakes by value
 arsort($filtered);
 
 // save result wallets
